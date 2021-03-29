@@ -9,6 +9,15 @@ module.exports = (config, options) => {
     systemjsModuleName: '@angular-mf/stats'
   }));
 
+  singleSpaWebpackConfig.externals.push(
+    /@angular\/.*/,
+    '@angular-mf/core',
+    'rxjs',
+    'rxjs/operators',
+    'single-spa',
+    'single-spa-angular',
+  );
+
   // Feel free to modify this webpack config however you'd like to
   return singleSpaWebpackConfig;
 };
