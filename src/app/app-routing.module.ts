@@ -3,8 +3,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { EmptyRouteComponent } from './empty-route/empty-route.component';
+import { StatsComponent } from './stats/stats.component';
 
 const routes: Routes = [
+  { path: 'stats', component: StatsComponent },
   /*
    * Makes sure we don't try to show a 404 ou error while single-spa is transitioning between routes
    * https://single-spa.js.org/docs/ecosystem-angular#configure-routes
