@@ -1,7 +1,10 @@
-<div class="content" role="main">
+<div class="root">
 
-    <span>{{ title }} app is running!</span>
+  <div class="title">
+    <h3>{{ title }}</h3>
+    <div class="note">Angular {{ ngVersion.full }}</div>
+  </div>
+
+  <router-outlet></router-outlet>
 
 </div>
-
-<router-outlet></router-outlet>
