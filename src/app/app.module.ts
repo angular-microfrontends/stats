@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from '@angular-mf/core';
@@ -19,6 +20,7 @@ import { StatsComponent } from './stats/stats.component';
     BrowserAnimationsModule,
     BrowserModule,
     CoreModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

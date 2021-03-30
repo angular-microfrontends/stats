@@ -1,6 +1,42 @@
-<core-stats
-  [fighter]="core.player"
-  [showCosts]="true"
-  [showExperience]="true"
-  name="Player"
-></core-stats>
+<div class="upgrade">
+
+  <core-stats
+    [fighter]="player"
+    [showCosts]="true"
+    [showExperience]="true"
+    name="Player"
+  ></core-stats>
+
+  <div class="buttons">
+
+    <button
+      [disabled]="agiDisabled"
+      color="primary"
+      mat-raised-button
+      (click)="player.upgradeAgility()"
+    >Agility</button>
+
+    <button
+      [disabled]="conDisabled"
+      color="primary"
+      mat-raised-button
+      (click)="player.upgradeConstitution()"
+    >Constitution</button>
+
+    <button
+      [disabled]="dexDisabled"
+      color="primary"
+      mat-raised-button
+      (click)="player.upgradeDexterity()"
+    >Dexterity</button>
+
+    <button
+      [disabled]="strDisabled"
+      color="primary"
+      mat-raised-button
+      (click)="player.upgradeStrength()"
+    >Strength</button>
+
+  </div>
+
+</div>
