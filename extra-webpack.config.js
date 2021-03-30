@@ -10,7 +10,10 @@ module.exports = (config, options) => {
   }));
 
   singleSpaWebpackConfig.externals.push(
-    /@angular\/.*/,
+    '@angular/common',
+    '@angular/core',
+    '@angular/platform-browser',
+    '@angular/router',
     '@angular-mf/core',
     'rxjs',
     'rxjs/operators',
