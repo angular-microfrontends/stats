@@ -14,11 +14,10 @@ module.exports = (config, options) => {
     '@angular/core',
     '@angular/platform-browser',
     '@angular/router',
-    '@angular-microfrontends/core',
+    '@angular-microfrontends/game-core',
     'rxjs',
     'rxjs/operators',
     'single-spa',
-    'single-spa-angular',
   );
 
   // Feel free to modify this webpack config however you'd like to
