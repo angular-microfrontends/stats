@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { CoreService, Fighter } from '@angular-mf/core';
+import { GameCoreService, Fighter } from '@angular-microfrontends/game-core';
 
 @Component({
   selector: 'stats-stats',
@@ -26,7 +26,7 @@ export class StatsComponent implements OnInit, OnDestroy {
   }
 
   constructor(
-    public core: CoreService,
+    public core: GameCoreService,
   ) {
     this.player = core.player;
   }
